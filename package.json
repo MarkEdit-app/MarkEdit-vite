@@ -1,0 +1,11 @@
+{
+  "name": "markedit-vite",
+  "version": "0.1.0",
+  "description": "Default Vite configuration for building MarkEdit extensions.",
+  "main": "main.js",
+  "types": "markedit-vite.d.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  }
+}
