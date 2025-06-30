@@ -11,7 +11,7 @@ Add `markedit-vite` to your (TypeScript) project's devDependencies:
 ```json
 {
   "devDependencies": {
-    "markedit-vite": "https://github.com/MarkEdit-app/MarkEdit-vite#v0.1.0"
+    "markedit-vite": "https://github.com/MarkEdit-app/MarkEdit-vite#v0.2.0"
   }
 }
 ```

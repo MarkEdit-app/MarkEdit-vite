@@ -14,7 +14,7 @@ function defaultViteConfig(args = {}) {
       Error.prepareStackTrace = (_, stack) => stack;
       const error = new Error();
       const stack = error.stack;
-      return dirname(fileURLToPath(stack[2].getFileName()));
+      return dirname(fileURLToPath(stack[2].getFileName())).replace('/node_modules/.vite-temp', '');
     } finally {
       Error.prepareStackTrace = stackTrace;
     }
