@@ -7,6 +7,7 @@ function defaultViteConfig(args = {}) {
   const entry = args.entry ?? 'main.ts';
   const outDir = args.outDir ?? 'dist';
   const destDir = args.destDir ?? '/Library/Containers/app.cyan.markedit/Data/Documents/scripts/';
+  const copyDistFile = args.copyDistFile ?? true;
 
   const rootDir = (() => {
     const stackTrace = Error.prepareStackTrace;
@@ -45,7 +46,7 @@ function defaultViteConfig(args = {}) {
       },
     },
     plugins: [
-      {
+      ...copyDistFile ? [{
         name: 'markedit-copy-dist-file',
         closeBundle: () => {
           const distDir = join(rootDir, outDir);
@@ -60,7 +61,7 @@ function defaultViteConfig(args = {}) {
           copyFileSync(sourcePath, destPath);
           console.log(`Successfully deployed to ${destPath}.`);
         },
-      },
+      }] : [],
     ],
   };
 }
