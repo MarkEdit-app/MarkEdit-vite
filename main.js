@@ -46,7 +46,7 @@ function defaultViteConfig(args = {}) {
       },
     },
     plugins: [
-      ...copyDistFile ? [{
+      ...(copyDistFile ? [{
         name: 'markedit-copy-dist-file',
         closeBundle: () => {
           const distDir = join(rootDir, outDir);
@@ -61,7 +61,7 @@ function defaultViteConfig(args = {}) {
           copyFileSync(sourcePath, destPath);
           console.log(`Successfully deployed to ${destPath}.`);
         },
-      }] : [],
+      }] : []),
     ],
   };
 }
