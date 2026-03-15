@@ -4,4 +4,5 @@ export const defaultViteConfig: (args?: {
   entry?: string;
   outDir?: string;
   destDir?: string;
+  copyDistFile?: boolean;
 }) => UserConfig;
