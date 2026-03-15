@@ -32,6 +32,7 @@ If the `options` is not provided, or some values are missing, the following is u
   entry: 'main.ts',
   outDir: 'dist',
   destDir: '/Library/Containers/app.cyan.markedit/Data/Documents/scripts/',
+  copyDistFile: true,
 }
 ```
 
