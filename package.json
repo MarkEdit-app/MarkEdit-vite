@@ -2,6 +2,18 @@
   "name": "markedit-vite",
   "version": "0.6.0",
   "description": "Default Vite configuration for building MarkEdit extensions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkEdit-app/MarkEdit-vite.git"
+  },
+  "files": [
+    "main.js",
+    "markedit-vite.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "main": "main.js",
   "types": "markedit-vite.d.ts",
   "license": "MIT",
