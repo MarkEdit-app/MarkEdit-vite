@@ -17,6 +17,9 @@
   "main": "main.js",
   "types": "markedit-vite.d.ts",
   "license": "MIT",
+  "dependencies": {
+    "globals": "^17.14.0"
+  },
   "peerDependencies": {
     "vite": "^6.0.0 || ^7.0.0 || ^8.0.0"
   }
