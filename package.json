@@ -1,6 +1,6 @@
 {
   "name": "markedit-vite",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Default Vite configuration for building MarkEdit extensions.",
   "repository": {
     "type": "git",
